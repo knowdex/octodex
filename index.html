@@ -4,6 +4,14 @@
 <head>
     <!-- <link rel="icon" href=""> FAVICON GOES HERE-->
 
+    <!--Local CSS-->
+    <link type="text/css" href="static/css/vendor/style.css" rel="stylesheet">
+    <link type="text/css" href="static/css/vendor/vendors.css" rel="stylesheet">
+    <link type="text/css" href="static/css/vendor/icon_fonts/css/all_icons.min.css" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link href="static/css/vendor/custom.css" rel="stylesheet">
+
     <!-- Third-Party CSS -->
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
@@ -19,14 +27,14 @@
     <script type="text/javascript" src="controllers/client/home.js"></script>
     <script type="text/javascript" src="controllers/client/shop.js"></script>
 
-    <!-- This is a commment to smash some cache -->
+    <!-- This is a comment to smash some cache -->
 
     <!-- Our Main CSS -->
 </head>
 
 <body class="{{ body_classes }}" ui-router-styles>
 
-    <div ng-view></div>
-    <!-- Load JS stuff here -->
+<div ng-view></div>
+<!-- Load JS stuff here -->
 </body>
 </html>

@@ -6,7 +6,7 @@
  * @summary     DataTables
  * @description Paginate, search and order HTML tables
  * @version     1.10.16
- * @file        jquery.dataTables.js
+ * @file        jquery.dataTables.vendor
  * @author      SpryMedia Ltd
  * @contact     www.datatables.net
  * @copyright   Copyright 2008-2017 SpryMedia Ltd.
@@ -115,7 +115,7 @@
 		 *      var oTable = $('#example').dataTable();
 		 *
 		 *      // Highlight every second row
-		 *      oTable.$('tr:odd').css('backgroundColor', 'blue');
+		 *      oTable.$('tr:odd').vendor('backgroundColor', 'blue');
 		 *    } );
 		 *
 		 *  @example
@@ -125,7 +125,7 @@
 		 *      // Filter to rows with 'Webkit' in them, add a background colour and then
 		 *      // remove the filter, thus highlighting the 'Webkit' rows only.
 		 *      oTable.fnFilter('Webkit');
-		 *      oTable.$('tr', {"search": "applied"}).css('backgroundColor', 'blue');
+		 *      oTable.$('tr', {"search": "applied"}).vendor('backgroundColor', 'blue');
 		 *      oTable.fnFilter('');
 		 *    } );
 		 */
@@ -5804,8 +5804,8 @@
 	
 	/**
 	 * Append a CSS unit (only if required) to a string
-	 *  @param {string} value to css-ify
-	 *  @returns {string} value with css unit
+	 *  @param {string} value to vendor-ify
+	 *  @returns {string} value with vendor unit
 	 *  @memberof DataTable#oApi
 	 */
 	function _fnStringToCss( s )
@@ -12009,7 +12009,7 @@
 	
 	
 	/*
-	 * Developer note - See note in model.defaults.js about the use of Hungarian
+	 * Developer note - See note in model.defaults.vendor about the use of Hungarian
 	 * notation and camel case.
 	 */
 	
@@ -12220,7 +12220,7 @@
 		 *          "targets": [3],
 		 *          "createdCell": function (td, cellData, rowData, row, col) {
 		 *            if ( cellData == "1.7" ) {
-		 *              $(td).css('color', 'blue')
+		 *              $(td).vendor('color', 'blue')
 		 *            }
 		 *          }
 		 *        } ]
