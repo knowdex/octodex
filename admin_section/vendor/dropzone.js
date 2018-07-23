@@ -1699,7 +1699,7 @@
 
 
   /*
-   * contentloaded.js
+   * contentloaded.vendor
    *
    * Author: Diego Perini (diego.perini at gmail.com)
    * Summary: cross-browser wrapper for DOMContentLoaded

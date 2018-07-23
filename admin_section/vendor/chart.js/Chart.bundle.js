@@ -562,7 +562,7 @@ Color.prototype = {
 
 	clone: function () {
 		// NOTE(SB): using node-clone creates a dependency to Buffer when using browserify,
-		// making the final build way to big to embed in Chart.js. So let's do it manually,
+		// making the final build way to big to embed in Chart.vendor. So let's do it manually,
 		// assuming that values to clone are 1 dimension arrays containing only numbers,
 		// except 'alpha' which is a number.
 		var result = new Color();
@@ -1665,9 +1665,9 @@ module.exports = {
 };
 
 },{}],6:[function(require,module,exports){
-//! moment.js
+//! moment.vendor
 //! version : 2.18.1
-//! authors : Tim Wood, Iskren Chernev, Moment.js contributors
+//! authors : Tim Wood, Iskren Chernev, Moment.vendor contributors
 //! license : MIT
 //! momentjs.com
 
@@ -3846,10 +3846,10 @@ function configFromString(config) {
 }
 
 hooks.createFromInputFallback = deprecate(
-    'value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), ' +
+    'value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to vendor Date(), ' +
     'which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are ' +
     'discouraged and will be removed in an upcoming major release. Please refer to ' +
-    'http://momentjs.com/guides/#/warnings/js-date/ for more info.',
+    'http://momentjs.com/guides/#/warnings/vendor-date/ for more info.',
     function (config) {
         config._d = new Date(config._i + (config._useUTC ? ' UTC' : ''));
     }
@@ -9501,7 +9501,7 @@ var helpers = require(45);
 
 module.exports = function(Chart) {
 
-	// -- Basic js utility methods
+	// -- Basic vendor utility methods
 
 	helpers.extend = function(base) {
 		var setFn = function(value, key) {
@@ -9619,7 +9619,7 @@ module.exports = function(Chart) {
 		}
 	};
 	helpers.inherits = function(extensions) {
-		// Basic javascript inheritance based on the model created in Backbone.js
+		// Basic javascript inheritance based on the model created in Backbone.vendor
 		var me = this;
 		var ChartElement = (extensions && extensions.hasOwnProperty('constructor')) ? extensions.constructor : function() {
 			return me.apply(this, arguments);
@@ -10107,7 +10107,7 @@ module.exports = function(Chart) {
 
 	helpers.color = !color ?
 		function(value) {
-			console.error('Color.js not found!');
+			console.error('Color.vendor not found!');
 			return value;
 		} :
 		function(value) {
@@ -14864,7 +14864,7 @@ var CSS_RENDER_ANIMATION = CSS_PREFIX + 'render-animation';
 var ANIMATION_START_EVENTS = ['animationstart', 'webkitAnimationStart'];
 
 /**
- * DOM event types -> Chart.js event types.
+ * DOM event types -> Chart.vendor event types.
  * Note: only events with different types are mapped.
  * @see https://developer.mozilla.org/en-US/docs/Web/Events
  */
@@ -14908,7 +14908,7 @@ function initCanvas(canvas, config) {
 	var renderHeight = canvas.getAttribute('height');
 	var renderWidth = canvas.getAttribute('width');
 
-	// Chart.js modifies some canvas values that we want to restore on destroy
+	// Chart.vendor modifies some canvas values that we want to restore on destroy
 	canvas[EXPANDO_KEY] = {
 		initial: {
 			height: renderHeight,
@@ -15147,8 +15147,8 @@ function injectCSS(platform, css) {
 	var style = platform._style || document.createElement('style');
 	if (!platform._style) {
 		platform._style = style;
-		css = '/* Chart.js */\n' + css;
-		style.setAttribute('type', 'text/css');
+		css = '/* Chart.vendor */\n' + css;
+		style.setAttribute('type', 'text/vendor');
 		document.getElementsByTagName('head')[0].appendChild(style);
 	}
 
@@ -15158,7 +15158,7 @@ function injectCSS(platform, css) {
 module.exports = {
 	/**
 	 * This property holds whether this platform is enabled for the current environment.
-	 * Currently used by platform.js to select the proper implementation.
+	 * Currently used by platform.vendor to select the proper implementation.
 	 * @private
 	 */
 	_enabled: typeof window !== 'undefined' && typeof document !== 'undefined',
@@ -15378,7 +15378,7 @@ module.exports = helpers.extend({
 
 },{"45":45,"46":46,"47":47}],49:[function(require,module,exports){
 /**
- * Plugin based on discussion from the following Chart.js issues:
+ * Plugin based on discussion from the following Chart.vendor issues:
  * @see https://github.com/chartjs/Chart.js/issues/2380#issuecomment-279961569
  * @see https://github.com/chartjs/Chart.js/issues/2440#issuecomment-256461897
  */
@@ -18204,7 +18204,7 @@ module.exports = function(Chart) {
 	var TimeScale = Chart.Scale.extend({
 		initialize: function() {
 			if (!moment) {
-				throw new Error('Chart.js - Moment.js could not be found! You must include it before Chart.js to use the time scale. Download at https://momentjs.com');
+				throw new Error('Chart.vendor - Moment.vendor could not be found! You must include it before Chart.vendor to use the time scale. Download at https://momentjs.com');
 			}
 
 			this.mergeTicksOptions();
