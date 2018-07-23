@@ -4,7 +4,7 @@ octoDex.controller("homeCtrl", function ($scope, $rootScope, $location, $http, $
 
     $http({
         method: 'GET',
-        url: '/api/get.php'
+        url: 'static/api/get.php'
     }).then(function (response) {
         console.log(response);
         $scope.people = response.data;
