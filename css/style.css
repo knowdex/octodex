@@ -73,7 +73,7 @@ Author URI: http://themeforest.net/user/Ansonika/
   -moz-animation: circle infinite .95s linear;
   -o-animation: circle infinite .95s linear;
   animation: circle infinite .95s linear;
-  border: 2px solid #662d91;
+  border: 2px solid #0072B2;                            /* changed */
   border-top-color: rgba(0, 0, 0, 0.2);
   border-right-color: rgba(0, 0, 0, 0.2);
   border-bottom-color: rgba(0, 0, 0, 0.2);
@@ -3136,7 +3136,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   -ms-border-radius: 3px;
   border-radius: 3px;
 }
-#pass-info.weakpass {
+#pass-info.weakpass {             /*Check pass-info later on*/
   border: 1px solid #FF9191;
   background: #FFC7C7;
   color: #94546E;
@@ -4389,7 +4389,7 @@ ul.list_3 li:before {
 }
 
 .call_section {
-  background: url(http://via.placeholder.com/1600x1067/ccc/fff/bg_call_section.jpg) center center no-repeat fixed;
+  background: url(../img/capitolio.jpg) center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -5104,6 +5104,8 @@ ul.bullets li:before {
     margin-bottom: 5px;
   }
 }
+
+/*Editar despueés?*/
 #cookie-bar .cb-enable {
   background: #92278f;
 }
