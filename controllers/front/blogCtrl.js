@@ -1,0 +1,3 @@
+octoDex.controller("blogCtrl", function () {
+
+});
