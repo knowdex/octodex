@@ -1,0 +1,3 @@
+octoDex.controller("coursesGridCtrl", function () {
+
+});

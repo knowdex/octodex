@@ -1,0 +1,3 @@
+octoDex.controller("contactsCtrl", function () {
+
+});
