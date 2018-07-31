@@ -422,3 +422,7 @@ a.box_topic i {
 ul#top_menu {
     margin-top: 10px;
 }
+
+.call_section {
+    background: url(../img/morroFinal.jpg) center center no-repeat fixed;
+}
