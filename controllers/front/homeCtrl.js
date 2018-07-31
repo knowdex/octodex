@@ -1,7 +1,16 @@
-octoDex.controller("homeCtrl", function () {
+octoDex.controller("homeCtrl", function ($scope, $http) {
     var c = this;
     c.$onInit = function () {
-		console.log("here");
+		$scope.people;
+		$http({
+			method: 'GET',
+			url: '/static/api/get.php'
+		}).then(function (response) {
+			$scope.people = response.data;
+			console.log($scope.people);
+		}, function (response) {
+			console.log(response.data,response.status);
+		});
 
 		//DO NOT TOUCH BELOW THIS LINE!
         // All js loading by this page
