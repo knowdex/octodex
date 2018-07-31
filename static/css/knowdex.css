@@ -407,7 +407,7 @@ a.box_topic i {
 }
 
 .cart_section {
-    background: #0072B2 url(../img/capitolioCarrito.png) fixed;
+    background: #0072B2 /*url(../img/capitolioCarrito.png)*/ fixed;
     border-bottom: 5px solid #DF632A;
 }
 
@@ -429,4 +429,12 @@ ul#top_menu {
 
 #hero_in.contacts:before {
     background: url(../img/capitolioCarrito.png) center center no-repeat;
+}
+
+.loginForm{
+    margin-top: 30px;
+}
+
+#error_page {
+    background: #0072B2 /*url(../img/error.jpg)*/ fixed;
 }
