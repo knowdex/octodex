@@ -426,3 +426,7 @@ ul#top_menu {
 .call_section {
     background: url(../img/morroFinal.jpg) center center no-repeat fixed;
 }
+
+#hero_in.contacts:before {
+    background: url(../img/capitolioCarrito.png) center center no-repeat;
+}
