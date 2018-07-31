@@ -1,0 +1,3 @@
+octoDex.controller("teacherDetail", function () {
+
+});
