@@ -1,3 +1,7 @@
+var appConfig = angular.module('appConfig', []).constant('appConfig', {
+	'backendURL': 'https://knowdex.com/octodex',
+})
+
 var octoDex  = angular.module("octoDexApp", ["ngRoute"]);
 
 octoDex.config(function($routeProvider,$locationProvider) {

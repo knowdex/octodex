@@ -2,12 +2,15 @@ octoDex.controller("homeCtrl", function ($scope, $http) {
     var c = this;
     c.$onInit = function () {
 		$scope.people;
+        
 		$http({
 			method: 'GET',
-			url: 'https://knowdex.com/octodex/static/api/get.php'
+			url: appConfig.backendURL + '/static/api/get.php',
+
 		}).then(function (response) {
 			$scope.people = response.data;
 			console.log($scope.people);
+
 		}, function (response) {
 			console.log(response.data,response.status);
 		});
