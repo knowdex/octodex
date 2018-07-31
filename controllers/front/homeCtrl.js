@@ -4,7 +4,7 @@ octoDex.controller("homeCtrl", function ($scope, $http) {
 		$scope.people;
 		$http({
 			method: 'GET',
-			url: '/static/api/get.php'
+			url: 'https://knowdex.com/octodex/static/api/get.php'
 		}).then(function (response) {
 			$scope.people = response.data;
 			console.log($scope.people);
