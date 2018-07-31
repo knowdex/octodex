@@ -1,10 +1,9 @@
 octoDex.controller("homeCtrl", function () {
-	
-	console.log("here!");
-	
-	//DO NOT TOUCH BELOW THIS LINE!
     var c = this;
     c.$onInit = function () {
+		console.log("here");
+
+		//DO NOT TOUCH BELOW THIS LINE!
         // All js loading by this page
         var HeaderVideo = (function ($, document) {
 
