@@ -16,5 +16,13 @@ octoDex.controller("faqCtrl",['$location','$anchorScroll', function ($location,$
                 }
             }
         });
+        function toggleChevron(e) {
+            $(e.target)
+                .prev('.card-header')
+                .find("i.indicator")
+                .toggleClass('ti-minus ti-plus');
+        }
+        // Accordion 2 (updated v1.2)
+        $('.accordion_2').on('hidden.bs.collapse shown.bs.collapse', toggleChevron);
     }
 }]);
