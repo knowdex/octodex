@@ -1,11 +1,11 @@
-octoDex.controller("homeCtrl", function ($scope, $http) {
+octoDex.controller("homeCtrl", function ($scope, $http, appConfig) {
     var c = this;
     c.$onInit = function () {
 		$scope.people;
-        
+
 		$http({
 			method: 'GET',
-			url: appConfig.backendURL + '/static/api/get.php',
+			url: appConfig.backendURL + '/static/api/get.php/',
 
 		}).then(function (response) {
 			$scope.people = response.data;
