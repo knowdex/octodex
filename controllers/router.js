@@ -70,6 +70,10 @@ octoDex.config(function($routeProvider,$locationProvider) {
             controller: 'teacherDetailCtrl',
             templateUrl: 'views/teacher-detail.html'
         })
+        .when("/revalida", {
+            controller: 'revalidaCtrl',
+            templateUrl: 'views/revalida.html'
+        })
         .when("/404", {
             templateUrl: 'views/errors/404.html'
         })
