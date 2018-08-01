@@ -46,7 +46,7 @@ octoDex.config(function($routeProvider,$locationProvider) {
             controller: 'coursesGridCtrl',
             templateUrl: 'views/courses-grid.html'
         })
-        .when("/revalida", {
+        .when("/cursos", {
             controller: 'coursesListCtrl',
             templateUrl: 'views/courses-list.html'
         })
@@ -65,10 +65,6 @@ octoDex.config(function($routeProvider,$locationProvider) {
         .when("/teacher-detail", {
             controller: 'teacherDetailCtrl',
             templateUrl: 'views/teacher-detail.html'
-        })
-        .when("/revalida", {
-            controller: 'revalidaCtrl',
-            templateUrl: 'views/revalida.html'
         })
         .when("/404", {
             templateUrl: 'views/errors/404.html'
