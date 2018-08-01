@@ -1,20 +1,6 @@
 octoDex.controller("homeCtrl", function ($scope, $http, appConfig) {
     var c = this;
     c.$onInit = function () {
-		$scope.people;
-
-		$http({
-			method: 'GET',
-			url: appConfig.backendURL + '/static/api/getCourses.php/',
-
-		}).then(function (response) {
-			// $scope.people = response.data;
-			console.log(response);
-
-		}, function (response) {
-			console.log(response.data,response.status);
-		});
-
 		//DO NOT TOUCH BELOW THIS LINE!
         // All js loading by this page
         var HeaderVideo = (function ($, document) {
