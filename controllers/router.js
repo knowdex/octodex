@@ -22,10 +22,6 @@ octoDex.config(function($routeProvider,$locationProvider) {
             controller: 'blogPostCtrl',
             templateUrl: 'views/blog-post.html'
         })
-        .when("/blog-post", {
-            controller: 'blogPostCtrl',
-            templateUrl: 'views/blog-post.html'
-        })
         .when("/cart-1", {
             controller: 'cart1Ctrl',
             templateUrl: 'views/cart-1.html'
@@ -50,11 +46,11 @@ octoDex.config(function($routeProvider,$locationProvider) {
             controller: 'coursesGridCtrl',
             templateUrl: 'views/courses-grid.html'
         })
-        .when("/courses-list", {
+        .when("/revalida", {
             controller: 'coursesListCtrl',
             templateUrl: 'views/courses-list.html'
         })
-        .when("/course-detail", {
+        .when("/course-detail/:id", {
             controller: 'courseDetailCtrl',
             templateUrl: 'views/course-detail.html'
         })
