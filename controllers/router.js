@@ -50,6 +50,10 @@ octoDex.config(function($routeProvider,$locationProvider) {
             controller: 'coursesGridCtrl',
             templateUrl: 'views/courses-grid.html'
         })
+        .when("/courses-list", {
+            controller: 'coursesListCtrl',
+            templateUrl: 'views/courses-list.html'
+        })
         .when("/course-detail", {
             controller: 'courseDetailCtrl',
             templateUrl: 'views/course-detail.html'
