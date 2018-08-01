@@ -5,11 +5,11 @@ octoDex.controller("homeCtrl", function ($scope, $http, appConfig) {
 
 		$http({
 			method: 'GET',
-			url: appConfig.backendURL + '/static/api/get.php/',
+			url: appConfig.backendURL + '/static/api/getCourses.php/',
 
 		}).then(function (response) {
-			$scope.people = response.data;
-			console.log($scope.people);
+			// $scope.people = response.data;
+			console.log(response);
 
 		}, function (response) {
 			console.log(response.data,response.status);
