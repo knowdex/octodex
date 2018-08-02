@@ -6,6 +6,8 @@ var octoDex  = angular.module("octoDexApp", ["ngRoute", "appConfig"]);
 
 octoDex.config(function($routeProvider,$locationProvider) {
     $routeProvider
+
+		// FRONT CTRL SECTION
         .when("/", {
             controller: "homeCtrl",
             templateUrl: 'views/home.html'
@@ -66,10 +68,14 @@ octoDex.config(function($routeProvider,$locationProvider) {
             controller: 'teacherDetailCtrl',
             templateUrl: 'views/teacher-detail.html'
         })
+
+		// ADMIN CTRL SECTION
         .when("/admin", {
             controller: 'adminCtrl',
-            templateUrl: '/admin/adminHome.html'
+            templateUrl: 'views/admin/adminHome.html'
         })
+
+		// ERROR CTRL SECTION
         .when("/404", {
             templateUrl: 'views/errors/404.html'
         })

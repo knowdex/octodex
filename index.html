@@ -18,7 +18,12 @@
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <link rel="stylesheet" type="text/css" href="static/css/vendors.css">
     <link rel="stylesheet" type="text/css" href="static/css/icon_fonts/css/all_icons.min.css">
-    <link rel="stylesheet" type="text/css"href="static/css/blog.css">
+    <link rel="stylesheet" type="text/css" href="static/css/blog.css">
+    <link rel="stylesheet" type="text/css" href="static/admin/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="static/admin/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="static/admin/css/date_picker.css">
+    <link rel="stylesheet" type="text/css" href="static/admin/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/admin/vendor/datatables/dataTables.bootstrap4.css">
 
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" href="static/css/knowdex.css">
@@ -27,14 +32,14 @@
 
 <body>
     <div id="page">
-        <div ng-include="'views/layouts/header.html'"></div>
+        <!-- <div ng-include="'views/layouts/header.html'"></div> -->
 
         <ng-view></ng-view>
 
-        <div ng-include="'views/layouts/footer.html'"></div>
+        <!-- <div ng-include="'views/layouts/footer.html'"></div> -->
     </div>
 
-    <!-- Third-Party CSS -->
+    <!-- Third-Party JS -->
     <script type="text/javascript" src="https://code.angularjs.org/1.7.0/angular.js"></script>
     <script type="text/javascript" src="https://code.angularjs.org/1.7.0/angular-route.min.js"></script>
     <script type="text/javascript" src="static/js/jquery-2.2.4.min.js"></script>
@@ -44,6 +49,13 @@
     <script type="text/javascript" src="static/js/modernizr.js"></script>
     <script type="text/javascript" src="static/js/video_header.js"></script>
     <script type="text/javascript" src="static/js/pw_strenght.js"></script>
+    <script type="text/javascript" src="static/admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="static/admin/vendor/datatables/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="static/admin/vendor/datatables/dataTables.bootstrap4.js"></script>
+	<script type="text/javascript" src="static/admin/vendor/jquery.selectbox-0.2.js"></script>
+	<script type="text/javascript" src="static/admin/vendor/retina-replace.min.js"></script>
+	<script type="text/javascript" src="static/admin/vendor/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="static/admin/js/admin.js"></script>
 
     <!-- Our Main Constrollers -->
     <script type="text/javascript" src="controllers/router.js"></script>
@@ -63,5 +75,7 @@
     <script type="text/javascript" src="controllers/front/loginCtrl.js"></script>
     <script type="text/javascript" src="controllers/front/registerCtrl.js"></script>
     <script type="text/javascript" src="controllers/front/teacherDetailCtrl.js"></script>
+    <script type="text/javascript" src="controllers/front/teacherDetailCtrl.js"></script>
+    <script type="text/javascript" src="controllers/back/adminCtrl.js"></script>
 </body>
 </html>
