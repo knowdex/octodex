@@ -28,11 +28,11 @@
 					<span>
 					<div class="form-group select">
 						<div class="styled-select">
-							<select class="required" name="education_apply" id="education_apply" ng-model="userFaculty">
+							<select class="required" name="education_apply" ng-model="userFaculty">
 								<option value="" selected="">Facultad de Derecho</option>
-								<option value="inter"> Inter </option>
-								<option value="iupi"> UPR </option>
-								<option value="ponce"> PUCPR </option>
+								<option value="INTER"> Inter </option>
+								<option value="IUPI"> UPR </option>
+								<option value="PUCPR"> PUCPR </option>
 							</select>
 						</div>
 					</div>
@@ -41,17 +41,17 @@
 					<span>
 					<div class="form-group select">
 						<div class="styled-select">
-							<select class="required" name="education_apply" id="education_apply" ng-model="userType">
+							<select class="required" name="education_apply" ng-model="userType">
 								<option value="" selected=""> ¿Eres estudiante o abogado/a? </option>
-								<option value="stu"> Estudiante </option>
-								<option value="law"> Abogado </option>
+								<option value="Estudiante"> Estudiante </option>
+								<option value="Abogado"> Abogado </option>
 							</select>
 						</div>
 					</div>
 					</span>
 
 					<span class="input">
-					<input class="input_field" type="text" id="password1" ng-model="userPhone">
+					<input class="input_field" type="text" ng-model="userPhone">
 						<label class="input_label">
 						<span class="">Teléfono</span>
 					</label>
@@ -73,7 +73,7 @@
 
 					<div id="pass-info" class="clearfix"></div>
 				</div>
-				<a href="#0" class="btn_1 rounded full-width add_top_30">Regístrese</a>
+				<button ng-click="registerUser()" class="btn_1 rounded full-width add_top_30">Regístrese</button>
 				<div class="text-center add_top_10">¿Ya tiene una cuenta? <strong><a href="#/login"> Ingrese aquí</a></strong></div>
 			</form>
 			<div class="copy">© 2018 Knowdex, LLC. </div>
