@@ -2,7 +2,7 @@ var appConfig = angular.module('appConfig', []).constant('appConfig', {
 	'backendURL': 'https://knowdex.com/octodex',
 })
 
-var octoDex  = angular.module("octoDexApp", ["ngRoute", "appConfig"]);
+var octoDex  = angular.module("octoDexApp", ["ngRoute", "appConfig", "angularCSS"]);
 
 octoDex.config(function($routeProvider,$locationProvider) {
     $routeProvider
@@ -72,7 +72,8 @@ octoDex.config(function($routeProvider,$locationProvider) {
 		// ADMIN CTRL SECTION
         .when("/admin", {
             controller: 'adminCtrl',
-            templateUrl: 'views/admin/adminHome.html'
+            templateUrl: 'views/admin/adminHome.html',
+			css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
         })
 
 		// ERROR CTRL SECTION
