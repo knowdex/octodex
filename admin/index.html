@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="octoDexApp">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Knowdex, LLC">
+        <meta name="author" content="Knowdex">
+        <title>Knowdex | The Knowledge Index</title>
+
+        <!-- Favicons-->
+
+        <link rel="icon" href="/static/img/knowdexIcon.png">
+
+
+        <!-- CSS -->
+
+        <!-- Bootstrap core CSS-->
+        <link href="adminStatic/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Main styles -->
+        <link href="adminStatic/css/admin.css" rel="stylesheet">
+        <!-- Icon fonts-->
+        <link href="adminStatic/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- Plugin styles -->
+        <link href="adminStatic/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+        <!-- Your custom styles -->
+        <link href="adminStatic/css/knowdexAdmin.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="page">
+            <div ng-include="/admin/views/adminLayout/top.html"></div>
+
+                <ng-view></ng-view>
+        </div>
+
+        <!-- Bootstrap core JavaScript-->
+        <script src="adminStatic/vendor/jquery/jquery.min.js"></script>
+        <script src="adminStatic/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="adminStatic/vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Page level plugin JavaScript-->
+        <script src="adminStatic/vendor/chart.js/Chart.js"></script>
+        <script src="adminStatic/vendor/datatables/jquery.dataTables.js"></script>
+        <script src="adminStatic/vendor/datatables/dataTables.bootstrap4.js"></script>
+        <script src="adminStatic/vendor/jquery.selectbox-0.2.js"></script>
+        <script src="adminStatic/vendor/retina-replace.min.js"></script>
+        <script src="adminStatic/vendor/jquery.magnific-popup.min.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="adminStatic/js/admin.js"></script>
+        <!-- Custom scripts for this page-->
+        <script src="adminStatic/js/admin-charts.js"></script>
+    </body>
+</html>
