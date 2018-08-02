@@ -68,7 +68,7 @@ octoDex.config(function($routeProvider,$locationProvider) {
         })
         .when("/admin", {
             controller: 'adminCtrl',
-            templateUrl: '/admin/index.html'
+            templateUrl: '/admin/adminHome.html'
         })
         .when("/404", {
             templateUrl: 'views/errors/404.html'
