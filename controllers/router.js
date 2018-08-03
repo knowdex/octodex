@@ -90,11 +90,36 @@ octoDex.config(function($routeProvider,$locationProvider) {
             templateUrl: 'views/admin/courses.html',
             css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
         })
+        .when("/admin/addBlog",{
+            controller: 'addBlogCtrl',
+            templateUrl: 'views/admin/addBlog.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+        })
+        .when("/admin/viewBlog",{
+            controller: 'viewBlogCtrl',
+            templateUrl: 'views/admin/viewBlog.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+        })
 		.when("/admin/profile", {
 			controller: 'profileCtrl',
 			templateUrl: 'views/admin/profile.html',
 			css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
 		})
+        .when("/admin/addProduct", {
+            controller: 'addProductCtrl',
+            templateUrl: 'views/admin/addProduct.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+        })
+        .when("/admin/viewProduct", {
+            controller: 'viewProductCtrl',
+            templateUrl: 'views/admin/viewProduct.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+        })
+        .when("/admin/viewOrders", {
+            controller: 'viewOrdersCtrl',
+            templateUrl: 'views/admin/viewOrders.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+        })
 
 		// ERROR CTRL SECTION
         .when("/404", {
