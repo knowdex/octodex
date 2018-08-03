@@ -66,6 +66,10 @@ octoDex.config(function($routeProvider,$locationProvider) {
             controller: 'teacherDetailCtrl',
             templateUrl: 'views/teacher-detail.html'
         })
+        .when("/producto", {
+            controller: 'productoCtrl',
+            templateUrl: 'views/producto.html'
+        })
         .when("/admin", {
             controller: 'adminCtrl',
             templateUrl: '/admin/adminHome.html'
