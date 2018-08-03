@@ -75,6 +75,16 @@ octoDex.config(function($routeProvider,$locationProvider) {
             templateUrl: 'views/admin/adminHome.html',
 			css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
         })
+		.when("/admin/users", {
+			controller: 'usersCtrl',
+			templateUrl: 'views/admin/users.html',
+			css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+		})
+		.when("/admin/profile", {
+			controller: 'profileCtrl',
+			templateUrl: 'views/admin/profile.html',
+			css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+		})
 
 		// ERROR CTRL SECTION
         .when("/404", {
