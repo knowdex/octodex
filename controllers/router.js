@@ -85,6 +85,11 @@ octoDex.config(function($routeProvider,$locationProvider) {
             templateUrl: 'views/admin/add-listing.html',
             css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
         })
+        .when("/admin/viewCourse",{
+            controller: 'viewCourseCtrl',
+            templateUrl: 'views/admin/courses.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+        })
 		.when("/admin/profile", {
 			controller: 'profileCtrl',
 			templateUrl: 'views/admin/profile.html',
