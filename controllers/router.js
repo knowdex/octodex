@@ -78,6 +78,9 @@ octoDex.config(function($routeProvider,$locationProvider) {
             controller: 'adminCtrl',
             templateUrl: '/admin/adminHome.html'
         })
+        .when("/pdf", {
+            templateUrl: '/build/generic/web/viewer.html'
+        })
         .when("/404", {
             templateUrl: 'views/errors/404.html'
         })
