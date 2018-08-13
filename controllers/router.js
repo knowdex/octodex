@@ -56,6 +56,10 @@ octoDex.config(function($routeProvider,$locationProvider) {
             controller: 'courseDetailCtrl',
             templateUrl: 'views/course-detail.html'
         })
+        .when("/contractBuilder", {
+            controller: 'contractBuilderCtrl',
+            templateUrl: 'views/contractBuilder.html'
+        })
         .when("/login", {
             controller: 'loginCtrl',
             templateUrl: 'views/login.html'
@@ -69,7 +73,6 @@ octoDex.config(function($routeProvider,$locationProvider) {
             templateUrl: 'views/teacher-detail.html'
         })
 
-		// ADMIN CTRL SECTION
         .when("/admin", {
             controller: 'adminCtrl',
             templateUrl: 'views/admin/adminHome.html',
@@ -120,8 +123,6 @@ octoDex.config(function($routeProvider,$locationProvider) {
             templateUrl: 'views/admin/viewOrders.html',
             css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
         })
-
-		// ERROR CTRL SECTION
         .when("/404", {
             templateUrl: 'views/errors/404.html'
         })

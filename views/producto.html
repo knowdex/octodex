@@ -1,0 +1,44 @@
+<main nc-controller="blogPostCtrl">
+    <section id="hero_in" class="general">
+        <div class="wrapper">
+            <div class="container">
+                <h1 class="fadeInUp"><span></span>Knowdex Product Controller</h1>
+            </div>
+        </div>
+    </section>
+    <!--/hero_in-->
+
+    <div class="container margin_60_35">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="bloglist singlepost">
+                    <form>
+                        <div class="form-group">
+                            <h3>Foto del Producto</h3>
+                            <input type="file" class="form-control-file" ng-model="newPhoto">
+                        </div>
+                        <div>
+                            <br>
+                            <h3>Nombre del Producto</h3>
+                            <input type="text" ng-model="newProduct">
+                        </div>
+                        <div>
+                            <br>
+                            <h3>Descripción</h3>
+                            <textarea name="description" id="" cols="100" rows="10" placeholder="Descripción" ng-model="newDescription"></textarea>
+                        </div>
+                        <div>
+                            <br>
+                            <h3>Precio</h3>
+                            <input type="text" ng-model="newPrice">
+                        </div>
+                        <button ng-click="sendProduct()" class="btn_1 rounded full-width add_top_30">Submit</button>
+
+                    </form>
+                </div>
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+</main>

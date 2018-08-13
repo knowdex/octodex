@@ -2,25 +2,28 @@
 	<div ng-include="'views/layouts/header.html'"></div>
 	<div id="login" >
 		<aside>
+			<div class="alert alert-success" ng-if="success">
+				¡Te has registrado exitosamente! Ir a login.
+			</div>
 			<form autocomplete="off" class="loginForm">
 				<div class="form-group">
 
 					<span class="input">
-					<input class="input_field" type="text" ng-model="userName">
+					<input class="input_field" type="text" ng-model="userName" required>
 						<label class="input_label">
 						<span class="">Nombre</span>
 					</label>
 					</span>
 
 					<span class="input">
-					<input class="input_field" type="text" ng-model="userLastName">
+					<input class="input_field" type="text" ng-model="userLastName" required>
 						<label class="input_label">
 						<span class="">Apellido</span>
 					</label>
 					</span>
 
 					<span class="input">
-					<input class="input_field" type="email" ng-model="userEmail">
+					<input class="input_field" type="email" ng-model="userEmail" required>
 						<label class="input_label">
 						<span class="">Correo electrónico</span>
 					</label>
@@ -29,7 +32,7 @@
 					<span>
 					<div class="form-group select">
 						<div class="styled-select">
-							<select class="required" name="education_apply" ng-model="userFaculty">
+							<select class="required" name="education_apply" ng-model="userFaculty" required>
 								<option value="" selected="">Facultad de Derecho</option>
 								<option value="INTER"> Inter </option>
 								<option value="IUPI"> UPR </option>
@@ -42,7 +45,7 @@
 					<span>
 					<div class="form-group select">
 						<div class="styled-select">
-							<select class="required" name="education_apply" ng-model="userType">
+							<select class="required" name="education_apply" ng-model="userType" required>
 								<option value="" selected=""> ¿Eres estudiante o abogado/a? </option>
 								<option value="Estudiante"> Estudiante </option>
 								<option value="Abogado"> Abogado </option>
@@ -52,21 +55,21 @@
 					</span>
 
 					<span class="input">
-					<input class="input_field" type="text" ng-model="userPhone">
+					<input class="input_field" type="text" ng-model="userPhone" required>
 						<label class="input_label">
 						<span class="">Teléfono</span>
 					</label>
 					</span>
 
 					<span class="input">
-					<input class="input_field" type="password" id="password1" ng-model="userPassword">
+					<input class="input_field" type="password" id="password1" ng-model="userPassword" required>
 						<label class="input_label">
 						<span class="">Contraseña</span>
 					</label>
 					</span>
 
 					<span class="input">
-					<input class="input_field" type="password" id="password2">
+					<input class="input_field" type="password" id="password2" ng-model="confirmPassword" required>
 						<label class="input_label">
 						<span class="">Confirme su Contraseña</span>
 					</label>

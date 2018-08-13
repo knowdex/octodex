@@ -1,8 +1,7 @@
 octoDex.controller("registerCtrl", function ($scope,$http, appConfig) {
 
     $scope.registerUser = function(){
-        console.log($scope.userName);
-        console.log($scope.userType);
+        $scope.success = false;
         $http({
             method: 'POST',
             url: appConfig.backendURL + '/static/api/postRegister.php/',
@@ -18,11 +17,23 @@ octoDex.controller("registerCtrl", function ($scope,$http, appConfig) {
         }).then(function (response) { //success
 
             console.log("Success");
+            $scope.success = true;
+
 
         }, function (response) {
 
             console.log(response.data,response.status);
         });
 
+        //Resets form
+        $scope.userName = null;
+        $scope.userLastName = null;
+        $scope.userEmail = null;
+        $scope.userFaculty = null;
+        $scope.userType = null;
+        $scope.userPhone = null;
+        $scope.userPassword = null;
+        $scope.confirmPassword = null;
     };
+
 });

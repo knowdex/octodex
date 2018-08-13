@@ -3,7 +3,7 @@
 	<section id="hero_in" class="general">
 		<div class="wrapper">
 			<div class="container">
-				<h1 class="fadeInUp"><span></span>Knowdex blog</h1>
+				<h1 class="fadeInUp"><span></span>Knowdex Blog Creator</h1>
 			</div>
 		</div>
 	</section>
@@ -13,26 +13,58 @@
 		<div class="row">
 			<div class="col-lg-9">
 				<div class="bloglist singlepost">
-					<p><img alt="" class="img-fluid" src="http://via.placeholder.com/800x400/ccc/fff/blog-single.jpg"></p>
-					<h1>Your blog article title</h1>
-					<div class="postmeta">
-						<ul>
-							<li><a href="#"><i class="icon_folder-alt"></i> Collections</a></li>
-							<li><a href="#"><i class="icon_clock_alt"></i> 23/12/2015</a></li>
-							<li><a href="#/teacher-detail"><i class="icon_pencil-edit"></i> Admin</a></li>
-							<li><a href="#"><i class="icon_comment_alt"></i> (14) Comentarios</a></li>
-						</ul>
-					</div>
-					<!-- /post meta -->
-					<div class="post-content">
-						<div class="dropcaps">
-							<p>Aorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<form>
+						<div class="form-group">
+							<h3>Foto del Blog</h3>
+							<input type="file" class="form-control-file" ng-model="newPhoto">
 						</div>
+						<div>
+							<br>
+							<h3>Autor del Blog</h3>
+							<input type="text" ng-model="newAuthor">
+						</div>
+						<div class="form-group">
+							<br>
+							<h3>Foto del Autor del Blog</h3>
+							<input type="file" class="form-control-file" ng-model="newAuthorPhoto">
+						</div>
+						<div>
+							<br>
+							<h3>Título del Blog</h3>
+							<input type="text" ng-model="newBlogTitle">
+						</div>
+						<div>
+							<br>
+							<h3>Descripción Corta del Blog</h3>
+							<textarea name="shortBlogInfo" id="" cols="100" rows="10" placeholder="Descripción" ng-model="newShortBlogInfo"></textarea>
+						</div>
+						<div>
+							<br>
+							<h3>Información del Blog</h3>
+							<textarea name="blogInfo" id="" cols="100" rows="10" placeholder="Información del Blog" ng-model="newBlogInfo"></textarea>
+						</div>
+						<button ng-click="sendBlog()" class="btn_1 rounded full-width add_top_30">Submit</button>
+						<!--<h1>Your blog article title</h1>-->
+						<!--<div class="postmeta">-->
+							<!--&lt;!&ndash;<ul>&ndash;&gt;-->
+								<!--&lt;!&ndash;<li><a href="#"><i class="icon_folder-alt"></i> Collections</a></li>&ndash;&gt;-->
+								<!--&lt;!&ndash;<li><a href="#"><i class="icon_clock_alt"></i> 23/12/2015</a></li>&ndash;&gt;-->
+								<!--&lt;!&ndash;<li><a href="#/teacher-detail"><i class="icon_pencil-edit"></i> Admin</a></li>&ndash;&gt;-->
+								<!--&lt;!&ndash;<li><a href="#"><i class="icon_comment_alt"></i> (14) Comentarios</a></li>&ndash;&gt;-->
+							<!--&lt;!&ndash;</ul>&ndash;&gt;-->
+						<!--</div>-->
+						<!--&lt;!&ndash; /post meta &ndash;&gt;-->
+						<!--<div class="post-content">-->
+							<!--<div class="dropcaps">-->
+								<!--<p>Aorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
+							<!--</div>-->
 
-						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-					</div>
-					<!-- /post -->
+							<!--<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>-->
+						<!--</div>-->
+						<!-- /post -->
+					</form>
 				</div>
+
 				<!-- /single-post -->
 
 				<!--<div id="comments">-->
