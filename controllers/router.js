@@ -2,10 +2,12 @@ var appConfig = angular.module('appConfig', []).constant('appConfig', {
 	'backendURL': 'https://knowdex.com/octodex',
 })
 
-var octoDex  = angular.module("octoDexApp", ["ngRoute", "appConfig"]);
+var octoDex  = angular.module("octoDexApp", ["ngRoute", "appConfig", "angularCSS"]);
 
 octoDex.config(function($routeProvider,$locationProvider) {
     $routeProvider
+
+		// FRONT CTRL SECTION
         .when("/", {
             controller: "homeCtrl",
             templateUrl: 'views/home.html'
@@ -70,16 +72,56 @@ octoDex.config(function($routeProvider,$locationProvider) {
             controller: 'teacherDetailCtrl',
             templateUrl: 'views/teacher-detail.html'
         })
-        .when("/producto", {
-            controller: 'productoCtrl',
-            templateUrl: 'views/producto.html'
-        })
+
         .when("/admin", {
             controller: 'adminCtrl',
-            templateUrl: '/admin/adminHome.html'
+            templateUrl: 'views/admin/adminHome.html',
+			css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
         })
-        .when("/pdf", {
-            templateUrl: '/build/generic/web/viewer.html'
+		.when("/admin/users", {
+			controller: 'usersCtrl',
+			templateUrl: 'views/admin/users.html',
+			css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+		})
+        .when("/admin/addCourse",{
+            controller: 'addCourseCtrl',
+            templateUrl: 'views/admin/add-listing.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+        })
+        .when("/admin/viewCourse",{
+            controller: 'viewCourseCtrl',
+            templateUrl: 'views/admin/courses.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+        })
+        .when("/admin/addBlog",{
+            controller: 'addBlogCtrl',
+            templateUrl: 'views/admin/addBlog.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+        })
+        .when("/admin/viewBlog",{
+            controller: 'viewBlogCtrl',
+            templateUrl: 'views/admin/viewBlog.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+        })
+		.when("/admin/profile", {
+			controller: 'profileCtrl',
+			templateUrl: 'views/admin/profile.html',
+			css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+		})
+        .when("/admin/addProduct", {
+            controller: 'addProductCtrl',
+            templateUrl: 'views/admin/addProduct.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+        })
+        .when("/admin/viewProduct", {
+            controller: 'viewProductCtrl',
+            templateUrl: 'views/admin/viewProduct.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
+        })
+        .when("/admin/viewOrders", {
+            controller: 'viewOrdersCtrl',
+            templateUrl: 'views/admin/viewOrders.html',
+            css: ['static/admin/css/admin.css','static/admin/css/date_picker.css']
         })
         .when("/404", {
             templateUrl: 'views/errors/404.html'

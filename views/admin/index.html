@@ -10,36 +10,36 @@
   <title>UDEMA - Admin dashboard</title>
 	
   <!-- Favicons-->
-  <link rel="shortcut icon" href="../adminStatic/img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" type="image/x-icon" href="../adminStatic/img/apple-touch-icon-57x57-precomposed.png">
-  <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../adminStatic/img/apple-touch-icon-72x72-precomposed.png">
-  <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="../adminStatic/img/apple-touch-icon-114x114-precomposed.png">
-  <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../adminStatic/img/apple-touch-icon-144x144-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 	
   <!-- Bootstrap core CSS-->
-  <link href="../adminStatic/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Main styles -->
-  <link href="../adminStatic/css/admin.css" rel="stylesheet">
+  <link href="css/admin.css" rel="stylesheet">
   <!-- Icon fonts-->
-  <link href="../adminStatic/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Plugin styles -->
-  <link href="../adminStatic/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Your custom styles -->
-  <link href="../adminStatic/css/knowdexAdmin.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 	
 </head>
 
 <body class="fixed-nav sticky-footer" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-default fixed-top" id="mainNav">
-    <a class="navbar-brand" href="../index.html"><img src="../adminStatic/img/logo.png" data-retina="true" alt="" width="163" height="36"></a>
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png" data-retina="true" alt="" width="163" height="36"></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="../index.html">
+          <a class="nav-link" href="index.html">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
           </a>
@@ -215,92 +215,87 @@
         <li class="breadcrumb-item">
           <a href="#">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">Your Courses</li>
+        <li class="breadcrumb-item active">My Dashboard</li>
       </ol>
-		<div class="box_general">
-			<div class="header_box">
-				<h2 class="d-inline-block">Your Courses</h2>
-				<div class="filter">
-					<select name="orderby" class="selectbox">
-						<option value="Any status">Any status</option>
-						<option value="Approved">Started</option>
-						<option value="Pending">Pending</option>
-						<option value="Cancelled">Cancelled</option>
-					</select>
-				</div>
-			</div>
-			<div class="list_general">
-				<ul>
-					<li>
-						<figure><img src="../adminStatic/img/course_1.jpg" alt=""></figure>
-						<h4>Course title <i class="pending">Pending</i></h4>
-						<ul class="course_list">
-							<li><strong>Start date</strong> 11 November 2017</li>
-							<li><strong>Expire date</strong> 11 April 2018</li>
-							<li><strong>Category</strong> Science, Economy</li>
-							<li><strong>Teacher</strong> Mark Twain</li>
-						</ul>
-						<h6>Course description</h6> 
-						<p>Lorem ipsum dolor sit amet, est ei idque voluptua copiosae, pro detracto disputando reformidans at, ex vel suas eripuit. Vel alii zril maiorum ex, mea id sale eirmod epicurei. Sit te possit senserit, eam alia veritus maluisset ei, id cibo vocent ocurreret per. Te qui doming doctus referrentur, usu debet tamquam et. Sea ut nullam aperiam, mei cu tollit salutatus delicatissimi. His appareat perfecto intellegat te. </p>
-						<ul class="buttons">
-							<li><a href="#0" class="btn_1 gray approve"><i class="fa fa-fw fa-check-circle-o"></i> Approve</a></li>
-							<li><a href="#0" class="btn_1 gray delete"><i class="fa fa-fw fa-times-circle-o"></i> Cancel</a></li>
-						</ul>
-					</li>
-					<li>
-						<figure><img src="../adminStatic/img/course_2.jpg" alt=""></figure>
-						<h4>Course title <i class="cancel">Cancelled</i></h4>
-						<ul class="course_list">
-							<li><strong>Start date</strong> 11 November 2017</li>
-							<li><strong>Expire date</strong> 11 April 2018</li>
-							<li><strong>Category</strong> Science, Economy</li>
-							<li><strong>Teacher</strong> Mark Twain</li>
-						</ul>
-						<h6>Course description</h6> 
-						<p>Lorem ipsum dolor sit amet, est ei idque voluptua copiosae, pro detracto disputando reformidans at, ex vel suas eripuit. Vel alii zril maiorum ex, mea id sale eirmod epicurei. Sit te possit senserit, eam alia veritus maluisset ei, id cibo vocent ocurreret per. Te qui doming doctus referrentur, usu debet tamquam et. Sea ut nullam aperiam, mei cu tollit salutatus delicatissimi. His appareat perfecto intellegat te. </p>
-						<ul class="buttons">
-							<li><a href="#0" class="btn_1 gray approve"><i class="fa fa-fw fa-check-circle-o"></i> Approve</a></li>
-							<li><a href="#0" class="btn_1 gray delete"><i class="fa fa-fw fa-times-circle-o"></i> Cancel</a></li>
-						</ul>
-					</li>
-					<li>
-						<figure><img src="../adminStatic/img/course_3.jpg" alt=""></figure>
-						<h4>Course title <i class="approved">Started</i></h4>
-						<ul class="course_list">
-							<li><strong>Start date</strong> 11 November 2017</li>
-							<li><strong>Expire date</strong> 11 April 2018</li>
-							<li><strong>Category</strong> Science, Economy</li>
-							<li><strong>Teacher</strong> Mark Twain</li>
-						</ul>
-						<h6>Course description</h6> 
-						<p>Lorem ipsum dolor sit amet, est ei idque voluptua copiosae, pro detracto disputando reformidans at, ex vel suas eripuit. Vel alii zril maiorum ex, mea id sale eirmod epicurei. Sit te possit senserit, eam alia veritus maluisset ei, id cibo vocent ocurreret per. Te qui doming doctus referrentur, usu debet tamquam et. Sea ut nullam aperiam, mei cu tollit salutatus delicatissimi. His appareat perfecto intellegat te. </p>
-						<ul class="buttons">
-							<li><a href="#0" class="btn_1 gray approve"><i class="fa fa-fw fa-check-circle-o"></i> Approve</a></li>
-							<li><a href="#0" class="btn_1 gray delete"><i class="fa fa-fw fa-times-circle-o"></i> Cancel</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+	  <!-- Icon Cards-->
+      <div class="row">
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card dashboard text-white bg-primary o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-envelope-open"></i>
+              </div>
+              <div class="mr-5"><h5>26 New Messages!</h5></div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="messages.html">
+              <span class="float-left">View Details</span>
+              <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card dashboard text-white bg-warning o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-star"></i>
+              </div>
+				<div class="mr-5"><h5>11 New Reviews!</h5></div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="reviews.html">
+              <span class="float-left">View Details</span>
+              <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card dashboard text-white bg-success o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-calendar-check-o"></i>
+              </div>
+              <div class="mr-5"><h5>10 New Courses!</h5></div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="bookings.html">
+              <span class="float-left">View Details</span>
+              <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card dashboard text-white bg-danger o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-heart"></i>
+              </div>
+              <div class="mr-5"><h5>10 New Bookmarks!</h5></div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="bookmarks.html">
+              <span class="float-left">View Details</span>
+              <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
 		</div>
-		<!-- /box_general-->
-		<nav aria-label="...">
-			<ul class="pagination pagination-sm add_bottom_30">
-				<li class="page-item disabled">
-					<a class="page-link" href="#" tabindex="-1">Previous</a>
-				</li>
-				<li class="page-item"><a class="page-link" href="#">1</a></li>
-				<li class="page-item"><a class="page-link" href="#">2</a></li>
-				<li class="page-item"><a class="page-link" href="#">3</a></li>
-				<li class="page-item">
-					<a class="page-link" href="#">Next</a>
-				</li>
-			</ul>
-		</nav>
-		<!-- /pagination-->
+		<!-- /cards -->
+		<h2></h2>
+		<div class="box_general padding_bottom">
+			<div class="header_box version_2">
+				<h2><i class="fa fa-bar-chart"></i>Statistic</h2>
+			</div>
+		 <canvas id="myAreaChart" width="100%" height="30" style="margin:45px 0 15px 0;"></canvas>
+		</div>
 	  </div>
-	  <!-- /container-fluid-->
+	  <!-- /.container-fluid-->
    	</div>
-    <!-- /container-wrapper-->
+    <!-- /.container-wrapper-->
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
@@ -331,19 +326,21 @@
       </div>
     </div>
     <!-- Bootstrap core JavaScript-->
-    <script src="../adminStatic/vendor/jquery/jquery.min.js"></script>
-    <script src="../adminStatic/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Core plugin JavaScript-->
-    <script src="../adminStatic/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Page level plugin JavaScript-->
-    <script src="../adminStatic/vendor/chart.js/Chart.min.js"></script>
-    <script src="../adminStatic/vendor/datatables/jquery.dataTables.js"></script>
-    <script src="../adminStatic/vendor/datatables/dataTables.bootstrap4.js"></script>
-	<script src="../adminStatic/vendor/jquery.selectbox-0.2.js"></script>
-	<script src="../adminStatic/vendor/retina-replace.min.js"></script>
-	<script src="../adminStatic/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/chart.js/Chart.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+	<script src="vendor/jquery.selectbox-0.2.js"></script>
+	<script src="vendor/retina-replace.min.js"></script>
+	<script src="vendor/jquery.magnific-popup.min.js"></script>
     <!-- Custom scripts for all pages-->
-    <script src="../adminStatic/js/admin.js"></script>
+    <script src="js/admin.js"></script>
+	<!-- Custom scripts for this page-->
+    <script src="js/admin-charts.js"></script>
 	
 </body>
 </html>

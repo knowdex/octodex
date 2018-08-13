@@ -20,6 +20,11 @@
     <link rel="stylesheet" type="text/css" href="static/css/icon_fonts/css/all_icons.min.css">
     <link rel="stylesheet" type="text/css" href="static/css/blog.css">
 
+    <link rel="stylesheet" type="text/css" href="static/admin/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/admin/vendor/datatables/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="static/admin/vendor/dropzone.css">
+
+
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" href="static/css/knowdex.css">
 
@@ -28,16 +33,13 @@
 <body>
 
     <div id="page">
-        <div ng-include="'views/layouts/header.html'"></div>
-
         <ng-view></ng-view>
-
-        <div ng-include="'views/layouts/footer.html'"></div>
     </div>
 
-    <!-- Third-Party CSS -->
+    <!-- Third-Party JS -->
     <script type="text/javascript" src="https://code.angularjs.org/1.7.0/angular.js"></script>
     <script type="text/javascript" src="https://code.angularjs.org/1.7.0/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.js"></script>
     <script type="text/javascript" src="static/js/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="static/js/common_scripts.js"></script>
     <script type="text/javascript" src="static/js/main.js"></script>
@@ -45,6 +47,15 @@
     <script type="text/javascript" src="static/js/modernizr.js"></script>
     <script type="text/javascript" src="static/js/video_header.js"></script>
     <script type="text/javascript" src="static/js/pw_strenght.js"></script>
+    <script type="text/javascript" src="static/admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="static/admin/vendor/datatables/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="static/admin/vendor/datatables/dataTables.bootstrap4.js"></script>
+	<script type="text/javascript" src="static/admin/vendor/jquery.selectbox-0.2.js"></script>
+	<script type="text/javascript" src="static/admin/vendor/retina-replace.min.js"></script>
+	<script type="text/javascript" src="static/admin/vendor/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="static/admin/js/admin.js"></script>
+	<script type="text/javascript" src="static/admin/vendor/dropzone.min.js"></script>
+	<script type="text/javascript" src="static/admin/js/admin-datatable.js"></script>
 
 
 
@@ -69,6 +80,19 @@
     <script type="text/javascript" src="controllers/front/productoCtrl.js"></script>
     <script type="text/javascript" src="controllers/front/contractBuilderCtrl.js"></script>
 
+
+
+    <script type="text/javascript" src="controllers/front/teacherDetailCtrl.js"></script>
+    <script type="text/javascript" src="controllers/back/adminCtrl.js"></script>
+    <script type="text/javascript" src="controllers/back/usersCtrl.js"></script>
+    <script type="text/javascript" src="controllers/back/profileCtrl.js"></script>
+    <script type="text/javascript" src="controllers/back/addCourseCtrl.js"></script>
+    <script type="text/javascript" src="controllers/back/viewCourseCtrl.js"></script>
+    <script type="text/javascript" src="controllers/back/addBlogCtrl.js"></script>
+    <script type="text/javascript" src="controllers/back/viewBlogCtrl.js"></script>
+    <script type="text/javascript" src="controllers/back/addProductCtrl.js"></script>
+    <script type="text/javascript" src="controllers/back/viewProductCtrl.js"></script>
+    <script type="text/javascript" src="controllers/back/viewOrdersCtrl.js"></script>
 
 </body>
 </html>

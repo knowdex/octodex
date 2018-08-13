@@ -2,7 +2,7 @@
 // db credentials
 define('DB_HOST', 'localhost');
 define('DB_USER','bklfcwmy_knowdex');
-define('DB_PASS','$Knowdex032917');
+define('DB_PASS','*****');
 define('DB_NAME','bklfcwmy_knowdex');
 
 // Connect with the database.
