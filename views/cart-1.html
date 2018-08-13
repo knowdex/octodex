@@ -1,4 +1,5 @@
 <main ng-controller="cart1Ctrl">
+	<div ng-include="'views/layouts/header.html'"></div>
 	<section id="hero_in" class="cart_section">
 		<div class="wrapper">
 			<div class="container">
@@ -8,7 +9,7 @@
 						<div class="progress">
 							<div class="progress-bar"></div>
 						</div>
-						<a href="#0" class="bs-wizard-dot"></a>
+						<a href="#/cart-1" class="bs-wizard-dot"></a>
 					</div>
 
 					<div class="bs-wizard-step disabled">
@@ -16,7 +17,7 @@
 						<div class="progress">
 							<div class="progress-bar"></div>
 						</div>
-						<a href="#0" class="bs-wizard-dot"></a>
+						<a href="#/cart-2" class="bs-wizard-dot"></a>
 					</div>
 
 					<div class="bs-wizard-step disabled">
@@ -24,7 +25,7 @@
 						<div class="progress">
 							<div class="progress-bar"></div>
 						</div>
-						<a href="#0" class="bs-wizard-dot"></a>
+						<a href="#" class="bs-wizard-dot"></a>
 					</div>
 				</div>
 				<!-- End bs-wizard -->
@@ -152,8 +153,8 @@
 							Total <span class="float-right">69.00$</span>
 						</div>
 						<div class="add_bottom_30">Lorem ipsum dolor sit amet, sed vide <strong>moderatius</strong> ad. Ex eius soleat sanctus pro, enim conceptam in quo, <a href="#0">brute convenire</a> appellantur an mei.</div>
-						<a href="#/cart-2" class="btn_1 full-width">Checkout</a>
-						<a href="courses-grid-sidebar.html" class="btn_1 full-width outline"><i class="icon-right"></i> Seguir Buscando</a>
+						<a href="#/cart-2" class="btn_1 full-width">Pagar</a>
+						<a href="#/courses-grid" class="btn_1 full-width outline"><i class="icon-right"></i> Seguir Buscando</a>
 					</div>
 				</aside>
 			</div>
@@ -162,4 +163,5 @@
 		<!-- /container -->
 	</div>
 	<!-- /bg_color_1 -->
+	<div ng-include="'views/layouts/footer.html'">
 </main>

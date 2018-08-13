@@ -1,8 +1,9 @@
 <main ng-controller="teacherDetailCtrl">
+	<div ng-include="'views/layouts/header.html'"></div>
 	<section id="hero_in" class="general">
 		<div class="wrapper">
 			<div class="container">
-				<h1 class="fadeInUp"><span></span> Información del Autor</h1>
+				<h1 class="fadeInUp"><span></span> Perfil del Escritor </h1>
 			</div>
 		</div>
 	</section>
@@ -31,7 +32,7 @@
 				<div class="box_teacher">
 					<div class="indent_title_in">
 						<i class="pe-7s-user"></i>
-						<h3>Profile</h3>
+						<h3>Perfil</h3>
 						<p>Mussum ipsum cacilds, vidis litro abertis.</p>
 					</div>
 					<div class="wrapper_indent">
@@ -135,4 +136,5 @@
 		<!-- /row -->
 	</div>
 	<!-- /container -->
+	<div ng-include="'views/layouts/footer.html'">
 </main>

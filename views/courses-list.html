@@ -1,0 +1,49 @@
+<main>
+	<div ng-include="'views/layouts/header.html'"></div>
+	<section id="hero_in" class="courses">
+		<div class="wrapper">
+			<div class="container">
+				<h1 class="fadeInUp"><span></span>Cursos: Reválida</h1>
+			</div>
+		</div>
+	</section>
+
+	<div class="wrapper">
+		<div class="container">
+			<br>
+			<br>
+
+			<p> <strong>A continuación encontrarán las materias por las que Knowdex provee Materiales de Práctica para la Reválida General de Derecho
+				que cubrimos en Knowdex. El currículo de clases que se muestra no es el real dado que todo nuestro contenido se encuentra en
+				nuestra nueva plataforma. Se les otorgará acceso a la plataforma y a la aplicación móvil (mediante invitación al correo electrónico
+				que usó al crear su usuario y/o pagar) una vez se procese y finalize el pago. De tener alguna duda y/o pregunta no dude en contactarnos
+				a hola@knowdex.com.
+			</strong></p>
+
+		</div>
+
+	</div>
+
+	<div class="container margin_60_35">
+		<div class="box_list wow" ng-repeat="list in coursesList">
+			<div class="row no-gutters">
+				<div class="col-lg-5">
+					<figure class="block-reveal">
+						<div class="block-horizzontal"></div>
+						<a ng-href="#/course-detail/{{ list.course_id }}"><img ng-src="{{ list.course_image }}" class="img-fluid" alt=""></a>
+					</figure>
+				</div>
+				<div class="col-lg-7">
+					<div class="wrapper">
+						<h3>{{ list.course_title }}</h3>
+						<p>{{ list.course_short }}</p>
+					</div>
+					<ul>
+						<li><a ng-href="#/course-detail/{{ list.course_id }}">Leer más</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div ng-include="'views/layouts/footer.html'">
+</main>

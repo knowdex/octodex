@@ -1,50 +1,86 @@
 <div id="register_bg" ng-controller="registerCtrl">
+	<div ng-include="'views/layouts/header.html'"></div>
 	<div id="login" >
 		<aside>
-			<form autocomplete="off">
+			<div class="alert alert-success" ng-if="success">
+				¡Te has registrado exitosamente! Ir a login.
+			</div>
+			<form autocomplete="off" class="loginForm">
 				<div class="form-group">
 
 					<span class="input">
-					<input class="input_field" type="text">
+					<input class="input_field" type="text" ng-model="userName" required>
 						<label class="input_label">
-						<span class="input__label-content">Your Name</span>
+						<span class="">Nombre</span>
 					</label>
 					</span>
 
 					<span class="input">
-					<input class="input_field" type="text">
+					<input class="input_field" type="text" ng-model="userLastName" required>
 						<label class="input_label">
-						<span class="input__label-content">Your Last Name</span>
+						<span class="">Apellido</span>
 					</label>
 					</span>
 
 					<span class="input">
-					<input class="input_field" type="email">
+					<input class="input_field" type="email" ng-model="userEmail" required>
 						<label class="input_label">
-						<span class="input__label-content">Your Email</span>
+						<span class="">Correo electrónico</span>
+					</label>
+					</span>
+
+					<span>
+					<div class="form-group select">
+						<div class="styled-select">
+							<select class="required" name="education_apply" ng-model="userFaculty" required>
+								<option value="" selected="">Facultad de Derecho</option>
+								<option value="INTER"> Inter </option>
+								<option value="IUPI"> UPR </option>
+								<option value="PUCPR"> PUCPR </option>
+							</select>
+						</div>
+					</div>
+					</span>
+
+					<span>
+					<div class="form-group select">
+						<div class="styled-select">
+							<select class="required" name="education_apply" ng-model="userType" required>
+								<option value="" selected=""> ¿Eres estudiante o abogado/a? </option>
+								<option value="Estudiante"> Estudiante </option>
+								<option value="Abogado"> Abogado </option>
+							</select>
+						</div>
+					</div>
+					</span>
+
+					<span class="input">
+					<input class="input_field" type="text" ng-model="userPhone" required>
+						<label class="input_label">
+						<span class="">Teléfono</span>
 					</label>
 					</span>
 
 					<span class="input">
-					<input class="input_field" type="password" id="password1">
+					<input class="input_field" type="password" id="password1" ng-model="userPassword" required>
 						<label class="input_label">
-						<span class="input__label-content">Your password</span>
+						<span class="">Contraseña</span>
 					</label>
 					</span>
 
 					<span class="input">
-					<input class="input_field" type="password" id="password2">
+					<input class="input_field" type="password" id="password2" ng-model="confirmPassword" required>
 						<label class="input_label">
-						<span class="input__label-content">Confirm password</span>
+						<span class="">Confirme su Contraseña</span>
 					</label>
 					</span>
 
 					<div id="pass-info" class="clearfix"></div>
 				</div>
-				<a href="#0" class="btn_1 rounded full-width add_top_30">Register to Udema</a>
-				<div class="text-center add_top_10">Already have an acccount? <strong><a href="#/login">Sign In</a></strong></div>
+				<button ng-click="registerUser()" class="btn_1 rounded full-width add_top_30">Regístrese</button>
+				<div class="text-center add_top_10">¿Ya tiene una cuenta? <strong><a href="#/login"> Ingrese aquí</a></strong></div>
 			</form>
-			<div class="copy">© 2017 Udema</div>
+			<div class="copy">© 2018 Knowdex, LLC. </div>
 		</aside>
 	</div>
 </div>

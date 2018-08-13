@@ -1,4 +1,5 @@
 <main ng-controller="faqCtrl as ctrl">
+    <div ng-include="'views/layouts/header.html'"></div>
     <section id="hero_in" class="general">
         <div class="wrapper">
             <div class="container">
@@ -15,7 +16,7 @@
                     <ul id="cat_nav">
                         <li><a href="#payment" class="active"><i class="icon_document_alt"></i>Preguntas
                             Generales</a></li>
-                        <li><a href="#tips"><i class="icon_document_alt"></i>Preguntas relacionadas a la
+                        <li><a href="#tips"><i class="icon_document_alt"></i>Preguntas relacionadas a <br>la
                             reválida</a></li>
                         <li><a href="#reccomendations"><i class="icon_document_alt"></i>Pagos, Suscripciones y
                             Reembolsos</a></li>
@@ -459,4 +460,5 @@
         <!-- /row -->
     </div>
     <!--/container-->
+    <div ng-include="'views/layouts/footer.html'">
 </main>

@@ -1,7 +1,7 @@
-octoDex.controller("homeCtrl", function () {
+octoDex.controller("homeCtrl", function ($scope, $http, appConfig) {
     var c = this;
-
     c.$onInit = function () {
+		//DO NOT TOUCH BELOW THIS LINE!
         // All js loading by this page
         var HeaderVideo = (function ($, document) {
 

@@ -4,7 +4,7 @@ Theme URI: http://www.ansonika.com/udema/
 Author: Ansonika
 Author URI: http://themeforest.net/user/Ansonika/
 
-[Table of contents] 
+[Table of contents]
 
 1. SITE STRUCTURE and TYPOGRAPHY
 - 1.1 Typography
@@ -2918,7 +2918,7 @@ section#reviews {
 }
 .box_detail figure {
   position: relative;
-  background-color: #000;
+  background-color: #f8f8f8;
 }
 .box_detail figure img {
   opacity: 0.8;
@@ -4389,7 +4389,7 @@ ul.list_3 li:before {
 }
 
 .call_section {
-  background: url(../img/capitolio.jpg) center center no-repeat fixed;
+  background: url(../img/morroFinal.jpg) center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

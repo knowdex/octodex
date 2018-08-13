@@ -1,0 +1,102 @@
+<div ng-include="'views/admin/layouts/sidebar.html'"></div>
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Add listing</li>
+        </ol>
+        <div class="box_general padding_bottom">
+            <div class="header_box version_2">
+                <h2><i class="fa fa-file"></i>Añadir Blog</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Título del Curso</label>
+                        <input type="text" class="form-control" placeholder="Título del Blog" ng-model="blogTitle">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Nombre del Autor/a</label>
+                        <input type="text" class="form-control" placeholder="Nombre del Autor/a" ng-model="authorName">
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Foto del Autor</label>
+                        <form>
+                            <input type="file" class="form-control-file" ng-model="authorPicture">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /row-->
+        </div>
+        <!-- /box_general-->
+
+        <div class="box_general padding_bottom">
+            <div class="header_box version_2">
+                <h2><i class="fa fa-file-text"></i>Descripción del Blog</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Información del Blog</label>
+                        <textarea rows="5" class="form-control" style="height:100px;" placeholder="Información" ng-model="blogDescription"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Foto del Blog</label>
+                        <form>
+                            <input type="file" class="form-control-file" ng-model="blogPicture">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /box_general-->
+    <p><a ng-click="addCourse()" class="btn_1 medium">Save</a></p>
+</div>
+<!-- /.container-fluid-->
+</div>
+<!-- /.container-wrapper-->
+<footer class="sticky-footer">
+    <div class="container">
+        <div class="text-center">
+            <small>Copyright © UDEMA 2018</small>
+        </div>
+    </div>
+</footer>
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fa fa-angle-up"></i>
+</a>
+<!-- Logout Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-include="'views/admin/layouts/footer.html'"></div>
